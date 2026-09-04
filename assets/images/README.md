@@ -13,6 +13,7 @@ GitHub, file lama otomatis tertimpa.
 | `games/game-2.png` | Kartu game ke-2 — Shadow Ninja | 800 × 460 px |
 | `games/game-3.png` | Kartu game ke-3 — Mecha Jump | 800 × 460 px |
 | `games/game-4.png` | Kartu game ke-4 — The Legend of Ngizing | 800 × 460 px |
+| `brand/logo.png` | Logo di pojok kiri atas (header) dan footer | PNG transparan, rasio lebar ~3:1 |
 | `brand/favicon.svg` | Ikon kecil di tab browser | boleh diganti, format SVG |
 
 Keempat kartu game memakai **ekstensi `.png` semua**, jadi kalau punya foto
