@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://freelancerdifferent-stack.github.io/sitemap.xml
