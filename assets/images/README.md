@@ -9,7 +9,7 @@ GitHub, file lama otomatis tertimpa.
 | File | Dipakai di | Ukuran disarankan |
 |---|---|---|
 | `hero/hero.jpg` | Gambar besar di bagian paling atas (hero) | 1920 × 1080 px, landscape |
-| `games/game-1.jpg` | Kartu game ke-1 (Nova Dash Adventure) | 900 × 600 px |
+| `games/game-1.png` | Kartu game ke-1 (Nova Dash Adventure) | 900 × 600 px |
 | `games/game-2.jpg` | Kartu game ke-2 (JumpRunner) | 900 × 600 px |
 | `games/game-3.jpg` | Kartu game ke-3 (Chord Guitar Global) | 900 × 600 px |
 | `games/game-4.jpg` | Kartu game ke-4 (More Games) | 900 × 600 px |
