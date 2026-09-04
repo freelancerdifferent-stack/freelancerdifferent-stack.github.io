@@ -12,7 +12,7 @@ GitHub, file lama otomatis tertimpa.
 | `games/game-1.png` | Kartu game ke-1 — Nova Dash Adventure | 800 × 460 px (rasio ~16:9) |
 | `games/game-2.png` | Kartu game ke-2 — Shadow Ninja | 800 × 460 px |
 | `games/game-3.png` | Kartu game ke-3 — Mecha Jump | 800 × 460 px |
-| `games/game-4.png` | Kartu game ke-4 — Legends of Ngizing | 800 × 460 px |
+| `games/game-4.png` | Kartu game ke-4 — The Legend of Ngizing | 800 × 460 px |
 | `brand/favicon.svg` | Ikon kecil di tab browser | boleh diganti, format SVG |
 
 Keempat kartu game memakai **ekstensi `.png` semua**, jadi kalau punya foto
