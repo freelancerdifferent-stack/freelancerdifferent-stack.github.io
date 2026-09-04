@@ -8,18 +8,16 @@ GitHub, file lama otomatis tertimpa.
 
 | File | Dipakai di | Ukuran disarankan |
 |---|---|---|
-| `hero/hero.jpg` | Gambar besar di bagian paling atas (hero) | 1920 × 1080 px, landscape |
-| `games/game-1.png` | Kartu game ke-1 (Nova Dash Adventure) | 900 × 600 px |
-| `games/game-2.jpg` | Kartu game ke-2 (JumpRunner) | 900 × 600 px |
-| `games/game-3.jpg` | Kartu game ke-3 (Chord Guitar Global) | 900 × 600 px |
-| `games/game-4.jpg` | Kartu game ke-4 (More Games) | 900 × 600 px |
-| `brand/logo.png` | Logo di header dan footer | 256 × 256 px, PNG transparan |
-| `brand/favicon.svg` | Ikon kecil di tab browser | sudah ada, boleh diganti |
-| `brand/og-image.jpg` | Gambar preview saat link dibagikan ke sosial media / WhatsApp | 1200 × 630 px |
-| `brand/apple-touch-icon.png` | Ikon saat situs di-save ke home screen iPhone | 180 × 180 px |
+| `hero/hero.jpg` | Gambar besar di bagian paling atas (hero banner) | 1600 × 900 px atau lebih, landscape |
+| `games/game-1.png` | Kartu game ke-1 — Nova Dash Adventure | 800 × 460 px (rasio ~16:9) |
+| `games/game-2.png` | Kartu game ke-2 — Shadow Ninja | 800 × 460 px |
+| `games/game-3.png` | Kartu game ke-3 — Mecha Jump | 800 × 460 px |
+| `games/game-4.png` | Kartu game ke-4 — Legends of Ngizing | 800 × 460 px |
+| `brand/favicon.svg` | Ikon kecil di tab browser | boleh diganti, format SVG |
 
-Selama file belum diupload, situs **tetap tampil normal** — bagian gambar
-diganti otomatis dengan kotak gradient (lihat `assets/js/main.js`).
+Keempat kartu game memakai **ekstensi `.png` semua**, jadi kalau punya foto
+atau poster baru dalam format `.jpg`, tinggal ganti dulu ekstensinya jadi
+`.png` sebelum upload (atau simpan ulang sebagai PNG dari HP/laptop).
 
 ## Cara upload lewat GitHub (tanpa aplikasi apa pun)
 
@@ -27,24 +25,36 @@ diganti otomatis dengan kotak gradient (lihat `assets/js/main.js`).
    (contoh: `assets/images/games/`).
 2. Klik tombol **Add file → Upload files**.
 3. Drag file gambar ke situ. **Pastikan nama file sama persis** dengan tabel
-   di atas, misalnya `game-1.jpg` (huruf kecil semua, ekstensi `.jpg`).
+   di atas, misalnya `game-1.png` (huruf kecil semua, ekstensi `.png`).
 4. Isi keterangan singkat lalu klik **Commit changes**.
 5. Tunggu 1–2 menit, lalu refresh situs. Kalau gambar lama masih muncul,
    buka dengan **hard refresh** (`Ctrl + Shift + R`) karena cache browser.
 
 ## Kalau nama/ekstensi file mau beda
 
-Misalnya punya `game-1.png` (bukan `.jpg`). Buka `index.html`, cari baris:
+Misalnya mau pakai `.jpg` untuk game-1. Buka `index.html`, cari baris:
 
 ```html
-<img src="assets/images/games/game-1.jpg" alt="Nova Dash Adventure" data-fallback="1">
+<img src="assets/images/games/game-1.png" alt="Nova Dash Adventure artwork">
 ```
 
-lalu ubah `.jpg` menjadi `.png`. Satu baris saja.
+lalu ubah `.png` menjadi `.jpg`. Satu baris saja per gambar.
+
+Untuk gambar hero, baris pengaturannya ada di `assets/css/style.css`,
+carilah teks `hero/hero.jpg` dan ganti ekstensinya di situ.
+
+## Tambah game baru (kartu ke-5 dst.)
+
+Di `index.html`, cari bagian `<!-- games -->`-nya (di dalam
+`<div class="game-grid">`), copy satu blok `<article class="game-card"> ... </article>`,
+lalu ubah judul, kategori (`tags`), dan `src` gambarnya (misalnya jadi
+`assets/images/games/game-5.png`). Upload gambarnya dengan nama yang sama.
 
 ## Tips
 
 - Kompres dulu gambarnya (misal di <https://squoosh.app>) agar situs cepat.
   Usahakan tiap file di bawah 300 KB.
-- Format `.jpg` untuk foto, `.png` untuk logo yang butuh latar transparan.
-- Hindari spasi dan huruf besar pada nama file.
+- Hindari spasi dan huruf besar pada nama file — pakai huruf kecil semua.
+- Kalau gambar hilang/lupa upload, browser akan menampilkan ikon gambar
+  rusak di slot tersebut — jadi pastikan setiap slot di tabel di atas
+  selalu terisi.
