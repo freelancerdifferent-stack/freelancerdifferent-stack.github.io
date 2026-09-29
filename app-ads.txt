@@ -1,4 +1,4 @@
-google.com, pub-2581873397792600, DIRECT, f08c47fec0942fa0
+google.com, pub-3722503406291544, DIRECT, f08c47fec0942fa0
 ogury.com, 065d4ff5-a269-44be-9634-9d4d7af2dfc3, RESELLER
 pokkt.com, 6246, RESELLER, c45702d9311e25fd
 spinx.biz, 1373698903, RESELLER, 9f2711e9aaa9f992
